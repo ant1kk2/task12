@@ -1,0 +1,55 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;font-size:inherit;font-weight: inherit;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear,input::-moz-clear,input::-webkit-clear-button{display: none;}
+button{cursor: pointer;color: inherit;background-color: inherit;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+a{text-decoration: none;color: inherit;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+input[type="search"]::-webkit-search-cancel-button{display: none;}
+/*--------------------*/
+
+.wrapper{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: #333;
+}
+
+.image_container{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ececec;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button{
+    padding: 20px 40px;
+    background-color: #ececec;
+    border-radius: 20px;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button:active{
+    background-color: #c8c8c8;
+}
