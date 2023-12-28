@@ -32,5 +32,9 @@ wrapper.append(btn);
 btn.addEventListener("click", () => {
   const imagesCount = imagesLinks.length;
   const randomNumberOfImage = Math.floor(Math.random() * imagesCount);
-  img.src = imagesLinks[randomNumberOfImage];
+  if (imagesCount === 0) {
+    imgContainer.innerText = "У нас нема картинок :(";
+  } else {
+    img.src = imagesLinks[randomNumberOfImage];
+  }
 });
